@@ -1,0 +1,15 @@
+.result {
+    margin: 10px;
+    text-align: left;
+}
+.result-quickview {
+    font-size: 70%;
+}
+.results {
+    margin: auto;
+    width: 600px;
+}
+.result-detail {
+    font-size: 90%;
+}
+

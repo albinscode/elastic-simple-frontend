@@ -1,5 +1,25 @@
 <div>
 
-    <input name="q" type="text">
-    <button>Rechercher</button>
+    <div class="form">
+        <input name="query" v-model="query" type="text">
+        <button @click="runQuery()">Rechercher</button>
+    </div>
+
+    <div class="results">
+        <div v-for="result in results" class="result">
+            <div class="result-title">
+                <a :href="result.realPath" >{{result.title}}</a>
+            </div>
+            <div class="result-quickview">
+                {{result.realPath}}
+            </div>
+            <div class="result-detail">
+                <span class="last-modified">{{result.lastModified}}</span>
+                <span class="content">
+                    {{result.content}}
+                </span>
+            </div>
+        </div>
+        <div v-if="!firstRun && results.length == 0" class="no-result">Aucun résultat</div>
+    </div>
 </div>
