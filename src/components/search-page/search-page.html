@@ -1,7 +1,7 @@
 <div>
 
     <div class="form">
-        <input name="query" v-model="query" type="text">
+        <input name="query" v-model="query" type="text" @keyup="checkEnterKey">
         <button @click="runQuery()">Rechercher</button>
     </div>
 
@@ -14,7 +14,7 @@
                 {{result.realPath}}
             </div>
             <div class="result-detail">
-                <span class="last-modified">{{result.lastModified}}</span>
+                <span class="last-modified">{{result.lastModified}} - {{result.index}} -</span>
                 <span class="content">
                     {{result.content}}
                 </span>

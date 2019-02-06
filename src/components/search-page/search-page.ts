@@ -9,19 +9,21 @@ export class Result {
     private filename: string = '';
     private content: string = '';
     private lastModified: string = '';
+    private index: string = '';
 
     constructor(
         raw: any,
         query: string,
     ) {
-        this.realPath = environment.fileProxy + raw._source.path.virtual;
         this.title = raw._source.meta.title ? raw._source.meta.title : raw._source.file.filename;
         this.filename = raw._source.file.filename;
         this.lastModified = raw._source.file.last_modified;
+        this.index = raw._index;
+        this.realPath = environment.fileProxy[this.index] + raw._source.path.virtual;
 
         this.content = raw._source.content;
-        const regex = new RegExp("/((\w+)\s){0,10}(" + query + ")\s((\w+)\s){0,10}/m");
-        let result = regex.exec(this.content);
+        const regex = new RegExp('/((\w+)\s){0,10}(' + query + ')\s((\w+)\s){0,10}/m');
+        const result = regex.exec(this.content);
         if (result) {
             this.content = result[0];
         }
@@ -70,18 +72,24 @@ export default class SearchPage extends Vue {
     private results = Array<Result>();
     private additionalParametersUrl: string = `&size=${environment.maxResults}`;
 
-    runQuery() {
-        axios.get(`${environment.searchUrl}${this.query}${this.additionalParametersUrl}`)
-        .then(response => {
-            this.results = response.data.hits.hits.map( (raw: any) => new Result(raw, this.query));
-        })
-        .catch(e => {
-            alert('Problème lors de la récupération des résultats');
-            console.log(e)
-        })
+    public checkEnterKey(e) {
+        if (e.keyCode == 13) {
+            this.runQuery();
+        }
     }
 
-    openLink(url: string) {
+    public runQuery() {
+    	const query = encodeURI(this.query.trim());
+        axios.get(`${environment.searchUrl}${query}${this.additionalParametersUrl}`)
+        .then((response) => {
+            this.results = response.data.hits.hits.map( (raw: any) => new Result(raw, this.query));
+        })
+        .catch((e) => {
+            alert('Problème lors de la récupération des résultats');
+        });
+    }
+
+    public openLink(url: string) {
         window.open(url);
     }
 

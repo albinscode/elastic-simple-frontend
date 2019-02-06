@@ -5,6 +5,9 @@ export const environment = {
     maxResults: 100,
     maxContentSize: 200,
     // where the files are stored and accessible to users
-    fileProxy: 'http://localhost/CNRS',
-}
+    fileProxy: {
+        gso: 'http://10.31.0.133/Clients_GSO',
+        clients: 'http://10.31.0.133/Clients',
+    },
+};
 
