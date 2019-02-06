@@ -15,9 +15,7 @@
             </div>
             <div class="result-detail">
                 <span class="last-modified">{{result.lastModified}} - {{result.index}} -</span>
-                <span class="content">
-                    {{result.content}}
-                </span>
+                <span class="content" v-html="result.content"> </span>
             </div>
         </div>
         <div v-if="!firstRun && results.length == 0" class="no-result">Aucun résultat</div>

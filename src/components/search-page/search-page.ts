@@ -21,44 +21,15 @@ export class Result {
         this.index = raw._index;
         this.realPath = environment.fileProxy[this.index] + raw._source.path.virtual;
 
-        this.content = raw._source.content;
-        const regex = new RegExp('/((\w+)\s){0,10}(' + query + ')\s((\w+)\s){0,10}/m');
-        const result = regex.exec(this.content);
-        if (result) {
-            this.content = result[0];
-        }
-        this.content = this.content.substr(0, environment.maxContentSize);
+        this.content = raw.highlight.content[0];
+	//const regex = new RegExp('/((\w+)\s){0,10}(' + query + ')\s((\w+)\s){0,10}/m');
+        //const result = regex.exec(this.content);
+        //if (result) {
+        //    this.content = result[0];
+        //}
+        //this.content = this.content.substr(0, environment.maxContentSize);
     }
 
-    // // @see https://stackoverflow.com/questions/16159532/find-words-around-search-term-snippet-with-javascript
-    // function getExcerpt(text, searchTerm, precision) {
-    // var words = text.split(" "),
-    //     index = words.firstOccurance(searchTerm),
-    //     result = [], // resulting array that we will join back
-    //     startIndex, stopIndex;
-    // // now we need first <precision> words before and after searchTerm
-    // // we can use slice for this matter
-    // // but we need to know what is our startIndex and stopIndex
-    // // since simple substitution from index could lead us to
-    // // a negative value
-    // // and adding to an index could get us to exceeding words array length
-
-    // startIndex = index - precision;
-    // if (startIndex < 0) {
-    //     startIndex = 0;
-    // }
-
-    // stopIndex = index + precision + 1;
-    // if (stopIndex > words.length) {
-    //     stopIndex = words.length;
-    // }
-
-
-    // result = result.concat( words.slice(startIndex, index) );
-    // result = result.concat( words.slice(index, stopIndex) );
-    // return result.join(' '); // join back
-
-    // }
 }
 
 @Component
@@ -80,7 +51,26 @@ export default class SearchPage extends Vue {
 
     public runQuery() {
     	const query = encodeURI(this.query.trim());
-        axios.get(`${environment.searchUrl}${query}${this.additionalParametersUrl}`)
+	axios.post(
+		environment.searchUrl, {
+			query: {
+				
+				match: {
+					content: query,
+				}
+			},
+			size: environment.maxResults,
+			highlight: {
+				fields: {
+					content: {}
+				}
+			}
+
+		}, {
+		    //transformResponse: [(response) => (JSON.parse(response))], 
+		    //maxContentLength: 10000000,
+	        },
+	)
         .then((response) => {
             this.results = response.data.hits.hits.map( (raw: any) => new Result(raw, this.query));
         })

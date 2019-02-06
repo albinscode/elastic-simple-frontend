@@ -9,6 +9,9 @@
     margin: auto;
     width: 600px;
 }
+.content em {
+    font-weight: bold;
+}
 .result-detail {
     font-size: 90%;
 }
