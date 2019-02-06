@@ -1,3 +1,3 @@
-import { environment as dev } from './environment.dev';
+import { environment as dev } from "./environment.dev";
 
 export const environment = dev;
