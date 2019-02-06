@@ -1,7 +1,7 @@
 <div>
 
     <div class="form">
-        <input name="query" v-model="query" type="text" @keyup="checkEnterKey">
+        <input ref="query" name="query" v-model="query" type="text" @keyup="checkEnterKey">
         <button @click="runQuery()">Rechercher</button>
     </div>
 

@@ -19,15 +19,11 @@ export class Result {
         this.filename = raw._source.file.filename;
         this.lastModified = raw._source.file.last_modified;
         this.index = raw._index;
-        this.realPath = environment.fileProxy[this.index] + raw._source.path.virtual;
+
+        // we try to put the file proxy if defined for the given ES index
+        this.realPath = (environment.fileProxy[this.index] ? environment.fileProxy[this.index] : '') + raw._source.path.virtual;
 
         this.content = raw.highlight.content[0];
-	//const regex = new RegExp('/((\w+)\s){0,10}(' + query + ')\s((\w+)\s){0,10}/m');
-        //const result = regex.exec(this.content);
-        //if (result) {
-        //    this.content = result[0];
-        //}
-        //this.content = this.content.substr(0, environment.maxContentSize);
     }
 
 }
@@ -37,11 +33,10 @@ export default class SearchPage extends Vue {
 
     @Prop() private msg!: string;
 
-    // data
+    // data accessible to template
     private firstRun = true;
     private query: string = '';
     private results = Array<Result>();
-    private additionalParametersUrl: string = `&size=${environment.maxResults}`;
 
     public checkEnterKey(e) {
         if (e.keyCode == 13) {
@@ -50,27 +45,36 @@ export default class SearchPage extends Vue {
     }
 
     public runQuery() {
-    	const query = encodeURI(this.query.trim());
-	axios.post(
-		environment.searchUrl, {
-			query: {
-				
-				match: {
-					content: query,
-				}
-			},
-			size: environment.maxResults,
-			highlight: {
-				fields: {
-					content: {}
-				}
-			}
+        const query = encodeURI(this.query.trim());
 
-		}, {
-		    //transformResponse: [(response) => (JSON.parse(response))], 
-		    //maxContentLength: 10000000,
-	        },
-	)
+        // we query on the content for a given number of results.
+        // furthermore, we use the highlight mecanism of ES
+        const params = {
+            query: {
+                match: {
+                    content: query,
+                }
+            },
+            size: environment.maxResults,
+            highlight: {
+                fields: {
+                    content: {}
+                },
+                pre_tags: '<b>',
+                post_tags: '</b>',
+            }
+        };
+
+        const options = {
+            //transformResponse: [(response) => (JSON.parse(response))],
+            //maxContentLength: 10000000,
+        };
+
+        axios.post(
+            environment.searchUrl,
+            params,
+            options,
+        )
         .then((response) => {
             this.results = response.data.hits.hits.map( (raw: any) => new Result(raw, this.query));
         })
@@ -83,4 +87,7 @@ export default class SearchPage extends Vue {
         window.open(url);
     }
 
+    public mounted() {
+        this.$refs.query.focus();
+    }
 }
