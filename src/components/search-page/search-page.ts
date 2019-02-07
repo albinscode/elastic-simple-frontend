@@ -47,11 +47,14 @@ export default class SearchPage extends Vue {
         const query = encodeURI(this.query.trim());
 
         // we query on the content for a given number of results.
+	// See https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html
         // furthermore, we use the highlight mecanism of ES
         const params = {
             query: {
-                match: {
-                    content: query
+                multi_match: {
+                    query: this.query,
+		    type: 'phrase',
+                    fields: [ 'content' ],
                 }
             },
             size: environment.maxResults,
