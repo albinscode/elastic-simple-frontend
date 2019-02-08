@@ -24,7 +24,10 @@ export class Result {
                 ? environment.fileProxy[this.index]
                 : "") + raw._source.path.virtual;
 
-        this.content = raw.highlight.content[0];
+        this.content =
+            raw.highlight && raw.highlight.content
+                ? raw.highlight.content[0]
+                : "";
     }
 }
 
@@ -79,7 +82,8 @@ export default class SearchPage extends Vue {
                     (raw: any) => new Result(raw, this.query)
                 );
             })
-            .catch(e => {
+            .catch((e: any) => {
+                console.log(e);
                 alert("Problème lors de la récupération des résultats");
             });
     }

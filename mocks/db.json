@@ -1,0 +1,505 @@
+{
+    "took": 74,
+    "timed_out": false,
+    "_shards": { "total": 1, "successful": 1, "skipped": 0, "failed": 0 },
+    "hits": {
+        "total": 845,
+        "max_score": 1.0,
+        "hits": [
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "eaa872441784336af92d5eae34161fba",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "raw": {
+                            "X-Parsed-By": "org.apache.tika.parser.DefaultParser",
+                            "Content-Encoding": "ISO-8859-1",
+                            "resourceName": "INSTALL",
+                            "Content-Type": "text/plain; charset=ISO-8859-1"
+                        }
+                    },
+                    "file": {
+                        "content_type": "text/plain; charset=ISO-8859-1",
+                        "created": "2016-11-25T18:30:44.000+0000",
+                        "last_modified": "2016-11-25T18:30:44.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:52.610+0000",
+                        "filesize": 2403,
+                        "filename": "INSTALL",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/js-misc/INSTALL"
+                    },
+                    "path": {
+                        "root": "9fda3d1cea46adca29a9162c298f532b",
+                        "virtual": "plain/js-misc/INSTALL",
+                        "real": "/usr/share/doc/texlive-doc/plain/js-misc/INSTALL"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "8646be2d3dde448c5944ebf9653ceca",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "raw": {
+                            "X-Parsed-By": "org.apache.tika.parser.DefaultParser",
+                            "Content-Encoding": "ISO-8859-1",
+                            "resourceName": "Imakefile",
+                            "Content-Type": "text/plain; charset=ISO-8859-1"
+                        }
+                    },
+                    "file": {
+                        "content_type": "text/plain; charset=ISO-8859-1",
+                        "created": "2016-11-25T18:30:44.000+0000",
+                        "last_modified": "2016-11-25T18:30:44.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:52.614+0000",
+                        "filesize": 2478,
+                        "filename": "Imakefile",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/js-misc/Imakefile"
+                    },
+                    "path": {
+                        "root": "9fda3d1cea46adca29a9162c298f532b",
+                        "virtual": "plain/js-misc/Imakefile",
+                        "real": "/usr/share/doc/texlive-doc/plain/js-misc/Imakefile"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "9da7b4b7797a38425b505c14def91f94",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "raw": {
+                            "X-Parsed-By": "org.apache.tika.parser.DefaultParser",
+                            "resourceName": "deutsch.tex.gz",
+                            "Content-Type": "application/gzip"
+                        }
+                    },
+                    "file": {
+                        "extension": "gz",
+                        "content_type": "application/gzip",
+                        "created": "2016-11-25T18:30:44.000+0000",
+                        "last_modified": "2016-11-25T18:30:44.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:52.622+0000",
+                        "filesize": 4619,
+                        "filename": "deutsch.tex.gz",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/js-misc/deutsch.tex.gz"
+                    },
+                    "path": {
+                        "root": "9fda3d1cea46adca29a9162c298f532b",
+                        "virtual": "plain/js-misc/deutsch.tex.gz",
+                        "real": "/usr/share/doc/texlive-doc/plain/js-misc/deutsch.tex.gz"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "a15b23a0246bf906d23d0bdef31aeec",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "author": "Amit Raj Dhawan",
+                        "date": "2015-09-02T18:12:01.000+0000",
+                        "keywords": [
+                            "TeX",
+                            " free",
+                            " fonts",
+                            " math font",
+                            " text",
+                            " maths font",
+                            " font-change",
+                            " Charter",
+                            " Utopia",
+                            " Century",
+                            " Palatino",
+                            " Bookman",
+                            " Times",
+                            " Euler",
+                            " Bera",
+                            " Arev",
+                            " Vera",
+                            " Iwona",
+                            " Kurier",
+                            " Kp-Fonts",
+                            " Antykwa Torunska",
+                            " Libertine",
+                            " Epigrafica",
+                            " Computer Modern Bright",
+                            " CM Bright",
+                            " Computer Modern",
+                            " Concrete",
+                            " macro",
+                            " macros"
+                        ],
+                        "format": "application/pdf; version=1.6",
+                        "creator_tool": "XeTeX: Based on TeX---The Genius of Knuth",
+                        "description": "Text and Math Fonts in TeX",
+                        "created": "2015-03-15T20:55:12.000+0000",
+                        "raw": {
+                            "date": "2015-09-02T20:12:01Z",
+                            "pdf:PDFVersion": "1.6",
+                            "xmp:CreatorTool": "XeTeX: Based on TeX---The Genius of Knuth",
+                            "dc:description": "Text and Math Fonts in TeX",
+                            "Keywords": "TeX, free, fonts, math font, text, maths font, font-change, Charter, Utopia, Century, Palatino, Bookman, Times, Euler, Bera, Arev, Vera, Iwona, Kurier, Kp-Fonts, Antykwa Torunska, Libertine, Epigrafica, Computer Modern Bright, CM Bright, Computer Modern, Concrete, macro, macros",
+                            "access_permission:modify_annotations": "true",
+                            "access_permission:can_print_degraded": "true",
+                            "subject": "Text and Math Fonts in TeX",
+                            "dc:creator": "Amit Raj Dhawan",
+                            "description": "Text and Math Fonts in TeX",
+                            "dcterms:created": "2015-03-15T21:55:12Z",
+                            "Last-Modified": "2015-09-02T20:12:01Z",
+                            "dcterms:modified": "2015-09-02T20:12:01Z",
+                            "dc:format": "application/pdf; version=1.6",
+                            "xmpMM:DocumentID": "uuid:6ffd3edf-1b17-42eb-a9ed-bcecaf42c2bb",
+                            "Last-Save-Date": "2015-09-02T20:12:01Z",
+                            "pdf:docinfo:creator_tool": "XeTeX: Based on TeX---The Genius of Knuth",
+                            "access_permission:fill_in_form": "true",
+                            "pdf:docinfo:keywords": "TeX, free, fonts, math font, text, maths font, font-change, Charter, Utopia, Century, Palatino, Bookman, Times, Euler, Bera, Arev, Vera, Iwona, Kurier, Kp-Fonts, Antykwa Torunska, Libertine, Epigrafica, Computer Modern Bright, CM Bright, Computer Modern, Concrete, macro, macros",
+                            "pdf:docinfo:modified": "2015-09-02T20:12:01Z",
+                            "meta:save-date": "2015-09-02T20:12:01Z",
+                            "pdf:encrypted": "false",
+                            "modified": "2015-09-02T20:12:01Z",
+                            "cp:subject": "Text and Math Fonts in TeX",
+                            "pdf:docinfo:subject": "Text and Math Fonts in TeX",
+                            "Content-Type": "application/pdf",
+                            "pdf:docinfo:creator": "Amit Raj Dhawan",
+                            "X-Parsed-By": "org.apache.tika.parser.pdf.PDFParser",
+                            "creator": "Amit Raj Dhawan",
+                            "meta:author": "Amit Raj Dhawan",
+                            "dc:subject": "TeX, free, fonts, math font, text, maths font, font-change, Charter, Utopia, Century, Palatino, Bookman, Times, Euler, Bera, Arev, Vera, Iwona, Kurier, Kp-Fonts, Antykwa Torunska, Libertine, Epigrafica, Computer Modern Bright, CM Bright, Computer Modern, Concrete, macro, macros",
+                            "meta:creation-date": "2015-03-15T21:55:12Z",
+                            "created": "2015-03-15T21:55:12Z",
+                            "access_permission:extract_for_accessibility": "true",
+                            "access_permission:assemble_document": "true",
+                            "xmpTPg:NPages": "65",
+                            "Creation-Date": "2015-03-15T21:55:12Z",
+                            "resourceName": "font-change.pdf",
+                            "access_permission:extract_content": "true",
+                            "access_permission:can_print": "true",
+                            "meta:keyword": "TeX, free, fonts, math font, text, maths font, font-change, Charter, Utopia, Century, Palatino, Bookman, Times, Euler, Bera, Arev, Vera, Iwona, Kurier, Kp-Fonts, Antykwa Torunska, Libertine, Epigrafica, Computer Modern Bright, CM Bright, Computer Modern, Concrete, macro, macros",
+                            "Author": "Amit Raj Dhawan",
+                            "producer": "MiKTeX-xdvipdfmx (0.7.8)",
+                            "access_permission:can_modify": "true",
+                            "pdf:docinfo:producer": "MiKTeX-xdvipdfmx (0.7.8)",
+                            "pdf:docinfo:created": "2015-03-15T21:55:12Z"
+                        }
+                    },
+                    "file": {
+                        "extension": "pdf",
+                        "content_type": "application/pdf",
+                        "created": "2016-11-25T18:30:43.000+0000",
+                        "last_modified": "2016-11-25T18:30:43.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:52.643+0000",
+                        "filesize": 922898,
+                        "filename": "font-change.pdf",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/font-change/font-change.pdf"
+                    },
+                    "path": {
+                        "root": "63644fc5e8b0b4ca6bf794ccac446",
+                        "virtual": "plain/font-change/font-change.pdf",
+                        "real": "/usr/share/doc/texlive-doc/plain/font-change/font-change.pdf"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "a6a5636e89855fa68098e4eb67bbace",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "raw": {
+                            "X-Parsed-By": "org.apache.tika.parser.DefaultParser",
+                            "Content-Encoding": "ISO-8859-1",
+                            "resourceName": "README.txt",
+                            "Content-Type": "text/plain; charset=ISO-8859-1"
+                        }
+                    },
+                    "file": {
+                        "extension": "txt",
+                        "content_type": "text/plain; charset=ISO-8859-1",
+                        "created": "2016-11-25T18:30:43.000+0000",
+                        "last_modified": "2016-11-25T18:30:43.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:53.293+0000",
+                        "filesize": 1094,
+                        "filename": "README.txt",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/font-change/README.txt"
+                    },
+                    "path": {
+                        "root": "63644fc5e8b0b4ca6bf794ccac446",
+                        "virtual": "plain/font-change/README.txt",
+                        "real": "/usr/share/doc/texlive-doc/plain/font-change/README.txt"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "22596c5fae28bf037d3e6ffd3445910",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "raw": {
+                            "X-Parsed-By": "org.apache.tika.parser.DefaultParser",
+                            "resourceName": "font-change.tex.gz",
+                            "Content-Type": "application/gzip"
+                        }
+                    },
+                    "file": {
+                        "extension": "gz",
+                        "content_type": "application/gzip",
+                        "created": "2016-11-25T18:30:43.000+0000",
+                        "last_modified": "2016-11-25T18:30:43.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:53.296+0000",
+                        "filesize": 22743,
+                        "filename": "font-change.tex.gz",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/font-change/font-change.tex.gz"
+                    },
+                    "path": {
+                        "root": "63644fc5e8b0b4ca6bf794ccac446",
+                        "virtual": "plain/font-change/font-change.tex.gz",
+                        "real": "/usr/share/doc/texlive-doc/plain/font-change/font-change.tex.gz"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "af159df176df36237b9eb5fbb7f94e",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "raw": {
+                            "X-Parsed-By": "org.apache.tika.parser.DefaultParser",
+                            "resourceName": "font-change_FRENCH.tex.gz",
+                            "Content-Type": "application/gzip"
+                        }
+                    },
+                    "file": {
+                        "extension": "gz",
+                        "content_type": "application/gzip",
+                        "created": "2016-11-25T18:30:43.000+0000",
+                        "last_modified": "2016-11-25T18:30:43.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:53.306+0000",
+                        "filesize": 25346,
+                        "filename": "font-change_FRENCH.tex.gz",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/font-change/font-change_FRENCH.tex.gz"
+                    },
+                    "path": {
+                        "root": "63644fc5e8b0b4ca6bf794ccac446",
+                        "virtual": "plain/font-change/font-change_FRENCH.tex.gz",
+                        "real": "/usr/share/doc/texlive-doc/plain/font-change/font-change_FRENCH.tex.gz"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "249d3cc4f64f86f6371da83621fd29a0",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "author": "Daphne Parramon-Dhawan",
+                        "title": "font-change : Macros utiles pour modifier les polices de teste et de maths en TeX",
+                        "date": "2015-09-02T18:12:38.000+0000",
+                        "format": "application/pdf; version=1.6",
+                        "creator_tool": "Adobe Acrobat Pro 11.0.6",
+                        "created": "2015-09-02T09:26:10.000+0000",
+                        "raw": {
+                            "date": "2015-09-02T20:12:38Z",
+                            "pdf:PDFVersion": "1.6",
+                            "pdf:docinfo:title": "font-change : Macros utiles pour modifier les polices de teste et de maths en TeX",
+                            "xmp:CreatorTool": "Adobe Acrobat Pro 11.0.6",
+                            "access_permission:modify_annotations": "true",
+                            "access_permission:can_print_degraded": "true",
+                            "dc:creator": "Daphne Parramon-Dhawan",
+                            "dcterms:created": "2015-09-02T11:26:10Z",
+                            "Last-Modified": "2015-09-02T20:12:38Z",
+                            "dcterms:modified": "2015-09-02T20:12:38Z",
+                            "dc:format": "application/pdf; version=1.6",
+                            "title": "font-change : Macros utiles pour modifier les polices de teste et de maths en TeX",
+                            "xmpMM:DocumentID": "uuid:4bbd1f27-62f4-4609-8a46-d883eca7380d",
+                            "Last-Save-Date": "2015-09-02T20:12:38Z",
+                            "pdf:docinfo:creator_tool": "Adobe Acrobat Pro 11.0.6",
+                            "access_permission:fill_in_form": "true",
+                            "pdf:docinfo:modified": "2015-09-02T20:12:38Z",
+                            "meta:save-date": "2015-09-02T20:12:38Z",
+                            "pdf:encrypted": "false",
+                            "dc:title": "font-change : Macros utiles pour modifier les polices de teste et de maths en TeX",
+                            "modified": "2015-09-02T20:12:38Z",
+                            "Content-Type": "application/pdf",
+                            "pdf:docinfo:creator": "Daphne Parramon-Dhawan",
+                            "X-Parsed-By": "org.apache.tika.parser.pdf.PDFParser",
+                            "creator": "Daphne Parramon-Dhawan",
+                            "meta:author": "Daphne Parramon-Dhawan",
+                            "meta:creation-date": "2015-09-02T11:26:10Z",
+                            "created": "2015-09-02T11:26:10Z",
+                            "access_permission:extract_for_accessibility": "true",
+                            "access_permission:assemble_document": "true",
+                            "xmpTPg:NPages": "66",
+                            "Creation-Date": "2015-09-02T11:26:10Z",
+                            "resourceName": "font-change_FRENCH.pdf",
+                            "access_permission:extract_content": "true",
+                            "access_permission:can_print": "true",
+                            "Author": "Daphne Parramon-Dhawan",
+                            "producer": "MiKTeX-xdvipdfmx (0.7.8)",
+                            "access_permission:can_modify": "true",
+                            "pdf:docinfo:producer": "MiKTeX-xdvipdfmx (0.7.8)",
+                            "pdf:docinfo:created": "2015-09-02T11:26:10Z"
+                        }
+                    },
+                    "file": {
+                        "extension": "pdf",
+                        "content_type": "application/pdf",
+                        "created": "2016-11-25T18:30:43.000+0000",
+                        "last_modified": "2016-11-25T18:30:43.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:53.313+0000",
+                        "filesize": 1015052,
+                        "filename": "font-change_FRENCH.pdf",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/font-change/font-change_FRENCH.pdf"
+                    },
+                    "path": {
+                        "root": "63644fc5e8b0b4ca6bf794ccac446",
+                        "virtual": "plain/font-change/font-change_FRENCH.pdf",
+                        "real": "/usr/share/doc/texlive-doc/plain/font-change/font-change_FRENCH.pdf"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "898d281467e2f56370fae24107b6667",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "raw": {
+                            "X-Parsed-By": "org.apache.tika.parser.DefaultParser",
+                            "Content-Encoding": "ISO-8859-1",
+                            "resourceName": "README",
+                            "Content-Type": "text/plain; charset=ISO-8859-1"
+                        }
+                    },
+                    "file": {
+                        "content_type": "text/plain; charset=ISO-8859-1",
+                        "created": "2016-11-25T18:30:43.000+0000",
+                        "last_modified": "2016-11-25T18:30:43.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:53.729+0000",
+                        "filesize": 312,
+                        "filename": "README",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/getoptk/README"
+                    },
+                    "path": {
+                        "root": "fa8b97bb545217e1fcc9f02a58506dd",
+                        "virtual": "plain/getoptk/README",
+                        "real": "/usr/share/doc/texlive-doc/plain/getoptk/README"
+                    }
+                }
+            },
+            {
+                "_index": "latex",
+                "_type": "_doc",
+                "_id": "c48ef9e0ec4a906ad362fbf35519c613",
+                "_score": 1.0,
+                "highlight": {
+                    "content": [
+                        "Default pdf content that is highlighted without an Elastic Search backend. So there will no relevant content."
+                    ]
+                },
+                "_source": {
+                    "content": "",
+                    "meta": {
+                        "raw": {
+                            "X-Parsed-By": "org.apache.tika.parser.DefaultParser",
+                            "resourceName": "COPYING.gz",
+                            "Content-Type": "application/gzip"
+                        }
+                    },
+                    "file": {
+                        "extension": "gz",
+                        "content_type": "application/gzip",
+                        "created": "2016-11-25T18:30:43.000+0000",
+                        "last_modified": "2016-11-25T18:30:43.000+0000",
+                        "last_accessed": "2018-12-27T20:00:30.000+0000",
+                        "indexing_date": "2019-02-08T20:25:53.735+0000",
+                        "filesize": 7416,
+                        "filename": "COPYING.gz",
+                        "url": "file:///usr/share/doc/texlive-doc/plain/getoptk/COPYING.gz"
+                    },
+                    "path": {
+                        "root": "fa8b97bb545217e1fcc9f02a58506dd",
+                        "virtual": "plain/getoptk/COPYING.gz",
+                        "real": "/usr/share/doc/texlive-doc/plain/getoptk/COPYING.gz"
+                    }
+                }
+            }
+        ]
+    }
+}
