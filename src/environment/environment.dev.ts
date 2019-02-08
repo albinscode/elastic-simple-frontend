@@ -1,4 +1,4 @@
-export const environment = {
+export const environment: any = {
     // the elastic search server url
     searchUrl: "http://localhost:9200/_search",
 

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search page default tests renders correctly 1`] = `
+<div>
+  <div
+    class="form"
+  >
+    <input
+      name="query"
+      type="text"
+    />
+     
+    <button>
+      Rechercher
+    </button>
+  </div>
+   
+  <div
+    class="results"
+  >
+     
+    <!---->
+  </div>
+</div>
+`;

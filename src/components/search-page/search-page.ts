@@ -40,7 +40,7 @@ export default class SearchPage extends Vue {
     private query: string = "";
     private results = Array<Result>();
 
-    public checkEnterKey(e) {
+    public checkEnterKey(e: any) {
         if (e.keyCode == 13) {
             this.runQuery();
         }
@@ -50,14 +50,14 @@ export default class SearchPage extends Vue {
         const query = encodeURI(this.query.trim());
 
         // we query on the content for a given number of results.
-	// See https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html
+        // See https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-match-query.html
         // furthermore, we use the highlight mecanism of ES
         const params = {
             query: {
                 multi_match: {
                     query: this.query,
-		    type: 'phrase',
-                    fields: [ 'content' ],
+                    type: "phrase",
+                    fields: ["content"]
                 }
             },
             size: environment.maxResults,
@@ -93,6 +93,7 @@ export default class SearchPage extends Vue {
     }
 
     public mounted() {
-        this.$refs.query.focus();
+        const query: any = this.$refs.query;
+        query.focus();
     }
 }
